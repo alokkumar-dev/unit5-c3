@@ -29,7 +29,7 @@ export const BookCard = ({ id, imageUrl, title, price }) => {
         <h4>{price}</h4>
         <h4>{title}</h4>
     </Link>
-    <BookDetailsPage  title={el.title} price={el.price} imageUrl={el.imageUrl} id={el.id} />
+  
     </>
   )
 };
