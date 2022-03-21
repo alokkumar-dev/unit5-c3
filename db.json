@@ -1,0 +1,70 @@
+{
+  "books": [
+    {
+        "id": 1,
+      "title": "BRAD TYLOR",
+      "imageUrl": "https://i.pinimg.com/474x/b4/b5/76/b4b57649cfee3f87fd421533bf3e2321.jpg",
+      "description": "'A new kind of campus novel . . . Taylor endows his narrative with the precision of science and the intimacy of memoir.",
+      "reviews": ["multiple reviews here"],
+      "author": "TYLOR",
+      "price": 1234,
+      "section": "Mystery",
+      "isbnNumber": 1234567
+    },
+    {
+        "id": 2,
+      "title": "BRAD TYLOR",
+      "imageUrl": "https://i.pinimg.com/474x/b4/b5/76/b4b57649cfee3f87fd421533bf3e2321.jpg",
+      "description": "'A new kind of campus novel . . . Taylor endows his narrative with the precision of science and the intimacy of memoir.",
+      "reviews": ["multiple reviews here"],
+      "author": "TYLOR",
+      "price": 1234,
+      "section": "Mystery",
+      "isbnNumber": 1234567
+    },
+    {
+        "id": 3,
+      "title": "BRAD TYLOR",
+      "imageUrl": "https://i.pinimg.com/474x/b4/b5/76/b4b57649cfee3f87fd421533bf3e2321.jpg",
+      "description": "'A new kind of campus novel . . . Taylor endows his narrative with the precision of science and the intimacy of memoir.",
+      "reviews": ["multiple reviews here"],
+      "author": "TYLOR",
+      "price": 1234,
+      "section": "Mystery",
+      "isbnNumber": 1234567
+    },
+    {
+        "id": 4,
+      "title": "BRAD TYLOR",
+      "imageUrl": "https://i.pinimg.com/474x/b4/b5/76/b4b57649cfee3f87fd421533bf3e2321.jpg",
+      "description": "'A new kind of campus novel . . . Taylor endows his narrative with the precision of science and the intimacy of memoir.",
+      "reviews": ["multiple reviews here"],
+      "author": "TYLOR",
+      "price": 1234,
+      "section": "Mystery",
+      "isbnNumber": 1234567
+    },
+    {
+        "id": 5,
+      "title": "BRAD TYLOR",
+      "imageUrl": "https://i.pinimg.com/474x/b4/b5/76/b4b57649cfee3f87fd421533bf3e2321.jpg",
+      "description": "'A new kind of campus novel . . . Taylor endows his narrative with the precision of science and the intimacy of memoir.",
+      "reviews": ["multiple reviews here"],
+      "author": "TYLOR",
+      "price": 1234,
+      "section": "Mystery",
+      "isbnNumber": 1234567
+    },
+    {
+        "id": 6,
+      "title": "BRAD TYLOR",
+      "imageUrl": "https://i.pinimg.com/474x/b4/b5/76/b4b57649cfee3f87fd421533bf3e2321.jpg",
+      "description": "'A new kind of campus novel . . . Taylor endows his narrative with the precision of science and the intimacy of memoir.",
+      "reviews": ["multiple reviews here"],
+      "author": "TYLOR",
+      "price": 1234,
+      "section": "Mystery",
+      "isbnNumber": 1234567
+    }
+  ]
+}
