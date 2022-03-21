@@ -39,9 +39,7 @@ export const Home = () => {
           books.map((el)=>{
             return(
               <div style={{ margin:"10px"}}>
-                  {/* <img src={el.imageUrl} alt="" style={{width:"200px", height:"200px"}} />
-                  <h4>{el.title}</h4>
-                <h4>{el.price}</h4> */}
+                 
                 {<BookCard title={el.title} price={el.price} imageUrl={el.imageUrl} id={el.id} /> }
 
               </div>

@@ -13,9 +13,9 @@ export const AllRoutes = () => {
         <Route exact path="/" element={<Home />} />
         {/* Create other routes here: Section, bookdetailspage and 404 */}
         {/*  */}
-        <Route path="/section/:name" element={<Section /> } />
-        <Route path="/books/:id" element={<BookDetailsPage /> } />
-        <Route path="*" element={<NotFound /> } />
+        <Route exact path="/section/:name" element={<Section /> } />
+        <Route exact path="/books/:id" element={<BookDetailsPage /> } />
+        <Route exact path="*" element={<NotFound /> } />
 
         
       </Routes>
