@@ -1,7 +1,14 @@
 export const SortAndFilterButtons = ({ handleSort }) => {
   return (
-    <div className="sortButtons" 
-      style={{display:"flex", justifyContent:"space-around", padding:"10px"}}
+    <div
+      className="sortButtons"
+      style={{
+        display: "flex",
+        justifyContent: "space-around",
+        padding: "10px",
+        backgroundColor: "lightpink",
+
+      }}
     >
       {/*
         Create 4 sorting buttons here to sort by following criteria:

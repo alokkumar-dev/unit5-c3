@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { BookDetailsPage } from "../BookDetailsPage/BookDetailsPage";
 
 export const BookCard = ({ id, imageUrl, title, price }) => {
   const Wrapper = styled.div`

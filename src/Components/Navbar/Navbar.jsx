@@ -10,8 +10,7 @@ export const Navbar = () => {
           justifyContent: "space-around",
           backgroundColor: "lightgreen",
           color: "while",
-          padding: "5px"
-          
+          padding: "5px"          
         }}
       >
         {/* Populate 5 buttons with EXACT same classnames as of their routes name */}

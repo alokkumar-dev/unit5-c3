@@ -13,6 +13,7 @@ export const BookDetailsPage = () => {
       setBook({ ...res.data });
     });
   }, []);
+
   if(book==null){
     return null;
   }

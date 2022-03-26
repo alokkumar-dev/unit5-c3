@@ -11,6 +11,8 @@ export const Section = () => {
   //   Everything else is same as Home page
 
   const [books, setBooks] = useState([]);
+  const [filterState, setFilterState] = useState({});
+
   const { section } = useParams();
   const getBooks = () => {
     axios.get(`http://localhost:8080/books`).then((res) => {
@@ -30,6 +32,9 @@ export const Section = () => {
     width:"200px";
     height:"300px";
   `;
+  const handleSort = (parameter, value) => {
+    setFilterState({ parameter, value });
+  };
 
   return (
     <>
@@ -39,12 +44,31 @@ export const Section = () => {
           section
         }
       </h2>
-      <SortAndFilterButtons handleSort={"give sorting function to component"} />
+      <SortAndFilterButtons handleSort={handleSort} />
 
       <Main className="sectionContainer">
         {/* SHow same BookCard component here, just like homepage but with books only belong to this Section */}
 
-        {books
+        {books.sort((a, b) => {
+            if (filterState.parameter == "title" && filterState.value == 1) {
+              return a["title"].localeCompare(b["title"]);
+            } else if (
+              filterState.parameter == "title" &&
+              filterState.value == -1
+            ) {
+              return b["title"].localeCompare(a["title"]);
+            } else if (
+              filterState.parameter == "price" &&
+              filterState.value == 1
+            ) {
+              return a["price"] - b["price"];
+            } else if (
+              filterState.parameter == "price" &&
+              filterState.value == -1
+            ) {
+              return b["price"] - a["price"];
+            }
+          })
           .filter((el) => {
             if (el.section == section) {
               return true;
