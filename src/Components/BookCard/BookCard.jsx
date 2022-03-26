@@ -3,18 +3,17 @@ import styled from "styled-components";
 import { BookDetailsPage } from "../BookDetailsPage/BookDetailsPage";
 
 export const BookCard = ({ id, imageUrl, title, price }) => {
-  console.log(title);
   const Wrapper = styled.div`
     border: 1px solid black;
     cursor: pointer;
-  `;
+    `;
   const Title = styled.p`
     color: blue;
     margin: 0;
-  `;
+    `;
   const Image = styled.img`
     width: 100%;
-    height: 200px;
+    height: 300px;
   `;
   const Price = styled.h4`
     margin: 0%;

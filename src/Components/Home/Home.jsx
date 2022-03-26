@@ -6,6 +6,7 @@ import { SortAndFilterButtons } from "../SortAndFilterButtons/SortAndFilterButto
 
 export const Home = () => {
   const [books, setBooks] = useState([]);
+  const [filterState, setFilterState] = useState({});
 
   useEffect(() => {
     getData();
@@ -15,6 +16,9 @@ export const Home = () => {
     axios.get(`http://localhost:8080/books`).then((res) => {
       setBooks([...res.data]);
     });
+  };
+  const handleSort = (parameter, value) => {
+    setFilterState({ parameter, value });
   };
 
   // get all books when user lands on the page
@@ -27,26 +31,44 @@ export const Home = () => {
     gap: 2%;
     width: 90%;
     margin: auto;
+
   `;
 
   return (
     <div className="homeContainer">
       <h2 style={{ textAlign: "center" }}>Home</h2>
-      <SortAndFilterButtons
-        handleSort={
-          "give handleSort function to this component, that sorts books"
-        }
-      />
+      <SortAndFilterButtons handleSort={handleSort} />
 
       <Main className="mainContainer">
-        {books.map((el) => (
-          <BookCard
-            title={el.title}
-            price={el.price}
-            imageUrl={el.imageUrl}
-            id={el.id}
-          />
-        ))}
+        {books
+          .sort((a, b) => {
+            if (filterState.parameter == "title" && filterState.value == 1) {
+              return a["title"].localeCompare(b["title"]);
+            } else if (
+              filterState.parameter == "title" &&
+              filterState.value == -1
+            ) {
+              return b["title"].localeCompare(a["title"]);
+            } else if (
+              filterState.parameter == "price" &&
+              filterState.value == 1
+            ) {
+              return a["price"] - b["price"];
+            } else if (
+              filterState.parameter == "price" &&
+              filterState.value == -1
+            ) {
+              return b["price"] - a["price"];
+            }
+          })
+          .map((el) => (
+            <BookCard
+              title={el.title}
+              price={el.price}
+              imageUrl={el.imageUrl}
+              id={el.id}
+            />
+          ))}
         {/* 
     Iterate over books that you get from network
     populate a <BookCard /> component

@@ -13,16 +13,22 @@ export const Section = () => {
   const [books, setBooks] = useState([]);
   const { section } = useParams();
   const getBooks = () => {
-    axios.get(`http://localhost:8080/books/${section}`).then((res) => {
+    axios.get(`http://localhost:8080/books`).then((res) => {
       setBooks([...res.data]);
     });
   };
+  console.log(books)
 
   useEffect(() => {
     getBooks();
   }, []);
   const Main = styled.div`
     /* Same as Homepage */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2%;
+    width:"200px";
+    height:"300px";
   `;
 
   return (

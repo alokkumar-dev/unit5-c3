@@ -2,18 +2,18 @@
   "books": [
     {
       "id": 1,
-      "title": "BRAD TYLOR",
+      "title": "Brand Tylor",
       "imageUrl": "https://i.pinimg.com/474x/b4/b5/76/b4b57649cfee3f87fd421533bf3e2321.jpg",
       "description": "'A new kind of campus novel . . . Taylor endows his narrative with the precision of science and the intimacy of memoir.",
       "reviews": ["multiple reviews here"],
       "author": "TYLOR",
       "price": 1234,
-      "section": "mystory",
+      "section": "mystery",
       "isbnNumber": 1567
     },
     {
       "id": 2,
-      "title": "BRAD TYLOR",
+      "title": "Abc",
       "imageUrl": "https://i.pinimg.com/474x/b4/b5/76/b4b57649cfee3f87fd421533bf3e2321.jpg",
       "description": "'A new kind of campus novel . . . Taylor endows his narrative with the precision of science and the intimacy of memoir.",
       "reviews": [
@@ -24,29 +24,29 @@
       ],
       "author": "TYLOR",
       "price": 1234,
-      "section": "mystory",
+      "section": "mystery",
       "isbnNumber": 1567
     },
     {
       "id": 3,
-      "title": "DESIGN FORMULA",
+      "title": "Design Formula",
       "imageUrl": "https://m.media-amazon.com/images/I/41gr3r3FSWL.jpg",
       "description": "'A new kind of campus novel . . . Taylor endows his narrative with the precision of science and the intimacy of memoir.",
       "reviews": ["multiple reviews here"],
       "author": "TYLOR",
       "price": 124334,
-      "section": "hystory",
+      "section": "history",
       "isbnNumber": 143567
     },
     {
       "id": 4,
-      "title": "DESIGN FORMULA",
+      "title": "Cab",
       "imageUrl": "https://m.media-amazon.com/images/I/41gr3r3FSWL.jpg",
       "description": "'A new kind of campus novel . . . Taylor endows his narrative with the precision of science and the intimacy of memoir.",
       "reviews": ["multiple reviews here"],
       "author": "TYLOR",
       "price": 124344,
-      "section": "hystory",
+      "section": "history",
       "isbnNumber": 144567
     },
     {
@@ -57,7 +57,7 @@
       "reviews": ["multiple reviews here"],
       "author": "TYLOR",
       "price": 15804,
-      "section": "technolory",
+      "section": "technology",
       "isbnNumber": 153567
     },
     {
@@ -68,7 +68,7 @@
       "reviews": ["multiple reviews here"],
       "author": "TYLOR",
       "price": 12604,
-      "section": "technolory",
+      "section": "technology",
       "isbnNumber": 163567
     },
     {
@@ -79,7 +79,7 @@
       "reviews": ["multiple reviews here"],
       "author": "TYLOR",
       "price": 1247,
-      "section": "mytholory",
+      "section": "mythology",
       "isbnNumber": 127467
     },
     {
@@ -90,7 +90,7 @@
       "reviews": ["multiple reviews here"],
       "author": "TYLOR",
       "price": 1248,
-      "section": "mytholory",
+      "section": "mythology",
       "isbnNumber": 123867
     }
   ]

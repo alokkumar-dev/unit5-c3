@@ -20,9 +20,9 @@ export const Navbar = () => {
         {/* Home component will have `/` route and classname as `home`  */}
         <button className="home"><Link to={"/"}>Home</Link></button>
         <button className="history"><Link to={"section/history"}>History</Link></button>
-        <button className="mystory"><Link to={"section/mystory"}>Mystory</Link></button>
-        <button className="mytholory"><Link to={"section/mytholory"}>Mythology</Link></button>
-        <button className="technolory"><Link to={"section/technolory"}>Technolory</Link></button>
+        <button className="mystery"><Link to={"section/mystery"}>Mystery</Link></button>
+        <button className="mythology"><Link to={"section/mythology"}>Mythology</Link></button>
+        <button className="technology"><Link to={"section/technology"}>Technology</Link></button>
       </div>
     </>
   );
