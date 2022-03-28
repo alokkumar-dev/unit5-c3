@@ -19,7 +19,6 @@ export const Section = () => {
       setBooks([...res.data]);
     });
   };
-  console.log(books)
 
   useEffect(() => {
     getBooks();
