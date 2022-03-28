@@ -1,7 +1,7 @@
 export const NotFound = () => {
   return (
     <div className="notFound">
-      {/* Show some 404 not found image or component here */}
+      { <p>Page not found</p> }
     </div>
   );
 };
