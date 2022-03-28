@@ -6,7 +6,7 @@ export const BookCard = ({ id, imageUrl, title, price }) => {
     border: 1px solid black;
     cursor: pointer;
     `;
-  const Title = styled.p`
+  const Title = styled.h2`
     color: blue;
     margin: 0;
     `;
@@ -14,12 +14,10 @@ export const BookCard = ({ id, imageUrl, title, price }) => {
     width: 100%;
     height: 300px;
   `;
-  const Price = styled.h4`
+  const Price = styled.h2`
     margin: 0%;
   `;
-  const Id = styled.h4`
-    margin: 0%;
-  `;
+
 
   // Bookcard is a card looking component, that is also a 'Link' for react-router
   //  it's basically shows one books information.
@@ -39,12 +37,11 @@ export const BookCard = ({ id, imageUrl, title, price }) => {
   //    title, image price etc here
   // </YourStyledLink>
   return (
-    <Wrapper>
+    <Wrapper className="bookCard">
       <Link to={`/bookdetailspage/${id}`}>
         <Image src={imageUrl} />
-        <Id>{id}</Id>
-        <Title>{title}</Title>
-        <Price>{price}</Price>
+        <Title className="title">{title}</Title>
+        <Price className="price">{price}</Price>
       </Link>
     </Wrapper>
   );

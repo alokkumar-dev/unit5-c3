@@ -4,7 +4,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div
+      <div className="navbar"
         style={{
           display: "flex",
           justifyContent: "space-around",
@@ -12,6 +12,7 @@ export const Navbar = () => {
           color: "while",
           padding: "5px"          
         }}
+        
       >
         {/* Populate 5 buttons with EXACT same classnames as of their routes name */}
         {/* Example: 
